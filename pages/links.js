@@ -4,24 +4,30 @@ import React,{useState} from "react";
 export default function Links({ links }) {
 
     const [url,setUrl] =useState('');
+    const [desc, setDesc] = useState('');
 
-    function submitHandler(event){
+    async function submitHandler(event){
         event.preventDefault();
         
-        const link={
-            url:url
-        }
+       
         //saveLink(link)
+
+        const response = await fetch('/api/submitLink?url='+url+'&desc='+desc,);
 
     }
     function urlHandler(event){
         setUrl(event.target.value)
     }
 
+    function descHandler(event){
+      setDesc(event.target.value)
+    }
+
   return (
     <div>
         <form onSubmit={submitHandler}>
             <input type='text' onChange={urlHandler} />
+            <input type='text' onChange={descHandler} />
             <button type='submit'>Submit</button>
             </form>
       <h1>Top links</h1>
