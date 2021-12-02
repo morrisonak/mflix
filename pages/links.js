@@ -37,7 +37,7 @@ export default function Links({ links }) {
       <ul>
         {links.map((link) => (
           <li>
-            <h2>{link.url}</h2>
+            <h2>{link.url}</h2> <h2>{link.description}</h2>
           </li>
         ))}
       </ul>
