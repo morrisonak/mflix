@@ -1,6 +1,5 @@
 // this api funtion will take in a subbmission and add it to the database
 
-import { findDOMNode } from "react-dom";
 import { connectToDatabase } from "../../util/mongodb";
 export default async (req, res) => {
     const { db } = await connectToDatabase();
@@ -9,7 +8,7 @@ export default async (req, res) => {
         .collection("movies")
         .find({})
         .sort({ metacritic: -1 })
-        .limit(5)
+        .limit(1)
         .toArray();
     res.json(movies);
         
