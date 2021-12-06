@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useState, useEffect } from 'react'
 import clientPromise from '../lib/mongodb'
 
 export default function Home({ isConnected }) {
@@ -24,6 +25,18 @@ export default function Home({ isConnected }) {
         )}
 
         <h2>Link submission form below</h2>
+        
+
+        
+        <form action="/submit" method="post">
+          <label>
+            URL 
+            <input type="text" name="url" />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+
+    
         
 
        
