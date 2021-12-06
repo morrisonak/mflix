@@ -24,7 +24,7 @@ export default function Home({ isConnected }) {
         )}
 
         <p className="description">
-          Get started
+          Lets Get started
         </p>
 
         <div className="grid">
