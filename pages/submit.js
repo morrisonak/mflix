@@ -48,7 +48,7 @@ export default function Home({ isConnected }) {
         
         <form onSubmit={submitHandler}>
             <input type='text' onChange={urlHandler} />
-            <input type='text' onChange={descHandler} />
+            {/* <input type='text' onChange={descHandler} /> */}
             <button type='submit'>Submit</button>
             </form>
 
