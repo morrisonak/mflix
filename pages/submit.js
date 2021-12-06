@@ -3,6 +3,24 @@ import { useState, useEffect } from 'react'
 import clientPromise from '../lib/mongodb'
 
 export default function Home({ isConnected }) {
+  const [url,setUrl] =useState('');
+  const [desc, setDesc] = useState('');
+
+  async function submitHandler(event){
+      event.preventDefault();
+      
+      //saveLink(link)
+
+      const response = await fetch('/api/submitLink?url='+url+'&desc='+desc,);
+
+  }
+  function urlHandler(event){
+      setUrl(event.target.value)
+  }
+
+  function descHandler(event){
+    setDesc(event.target.value)
+  }
   return (
     <div className="container">
       <Head>
@@ -16,7 +34,7 @@ export default function Home({ isConnected }) {
         </h2>
 
         {isConnected ? (
-          <h2 className="subtitle">You are connected to Insightful buzz database</h2>
+          <h2 className="subtitle">You are connected to the Insightful buzz database</h2>
         ) : (
           <h2 className="subtitle">
             You are NOT connected to MongoDB. Check the <code>README.md</code>{' '}
