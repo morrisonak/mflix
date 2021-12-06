@@ -27,7 +27,7 @@ export default function Links({ links }) {
        <div className="container">
         <form onSubmit={submitHandler}>
             <input type='text' onChange={urlHandler} />
-            <input type='text' onChange={descHandler} />
+             {/* comment here  .<input type='text' onChange={descHandler} /> */}
             <button type='submit'>Submit</button>
             </form>
       <h1>Top links</h1>
