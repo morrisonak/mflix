@@ -53,11 +53,7 @@ export default function Home({ isConnected }) {
             </form>
 
     
-        
-
-       
-
-
+   
 
 
 

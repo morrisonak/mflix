@@ -23,7 +23,8 @@ export default function Links({ links }) {
     }
 
   return (
-    <div>
+    
+       <div className="container">
         <form onSubmit={submitHandler}>
             <input type='text' onChange={urlHandler} />
             <input type='text' onChange={descHandler} />
