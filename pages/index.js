@@ -11,11 +11,11 @@ export default function Home({ isConnected }) {
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js with MongoDB!</a>
+          Welcome to Insightful Buzz!
         </h1>
 
         {isConnected ? (
-          <h2 className="subtitle">You are connected to MongoDB</h2>
+          <h2 className="subtitle">You are connected to the Insightful buzz database</h2>
         ) : (
           <h2 className="subtitle">
             You are NOT connected to MongoDB. Check the <code>README.md</code>{' '}
@@ -24,13 +24,13 @@ export default function Home({ isConnected }) {
         )}
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Get started
         </p>
 
         <div className="grid">
           <a href="/submit" className="card">
             <h3>Submit Link &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <p>Submit a link here to be added to to the links under consideration.</p>
           </a>
 
           <a href="https://nextjs.org/learn" className="card">
