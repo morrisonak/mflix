@@ -51,7 +51,7 @@ export async function getServerSideProps() {
   const links = await db
     .collection("links")
     .find({})
-    .limit(20)
+    .limit(50)
     .toArray();
 
   return {
