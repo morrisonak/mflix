@@ -62,7 +62,7 @@ export default function Home({ isConnected }) {
         
           
        <h3>
-          Powered by{' Insightful Buzz'}
+          Powered by{' Insightful Buzz Corporation'}
           </h3>
          
       </footer>
