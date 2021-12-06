@@ -42,7 +42,7 @@ export default function Home({ isConnected }) {
           </h2>
         )}
 
-        <h2>Link submission form below</h2>
+        <h2>Please submit your link below</h2>
         
 
         
@@ -60,14 +60,12 @@ export default function Home({ isConnected }) {
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
+        <h3>
+          Powered by{' Insightful Buzz Corporation'}
+        </h3>
+       
+  
+       
       </footer>
 
       <style jsx>{`
