@@ -16,7 +16,7 @@ export default function Home({ isConnected }) {
         </h2>
 
         {isConnected ? (
-          <h2 className="subtitle">You are connected to MongoDB</h2>
+          <h2 className="subtitle">You are connected to Insightful buzz database</h2>
         ) : (
           <h2 className="subtitle">
             You are NOT connected to MongoDB. Check the <code>README.md</code>{' '}
@@ -28,13 +28,11 @@ export default function Home({ isConnected }) {
         
 
         
-        <form action="/submit" method="post">
-          <label>
-            URL 
-            <input type="text" name="url" />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
+        <form onSubmit={submitHandler}>
+            <input type='text' onChange={urlHandler} />
+            <input type='text' onChange={descHandler} />
+            <button type='submit'>Submit</button>
+            </form>
 
     
         
