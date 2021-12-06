@@ -9,7 +9,6 @@ export default function Links({ links }) {
     async function submitHandler(event){
         event.preventDefault();
         
-       
         //saveLink(link)
 
         const response = await fetch('/api/submitLink?url='+url+'&desc='+desc,);
