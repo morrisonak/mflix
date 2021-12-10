@@ -23,11 +23,7 @@ export default function Home({ isConnected }) {
           </h2>
         )}
 
-        <p className="description">
-          Lets Get started
-        </p>
-
-        <div className="grid">
+          <div className="grid">
           <a href="/submit" className="card">
             <h3>Submit Link &rarr;</h3>
             <p>Submit a link here to be added to to the links under consideration.</p>
